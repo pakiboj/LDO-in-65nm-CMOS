@@ -1,0 +1,37 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Aug 31 23:40:07 2026 
+Best design point: 1
+Design specs: 
+	important	corner	Nominal - 
+	getData("phaseMargin" ?result "stb_margin")		73.97
+	getData("phaseMarginFreq" ?result "stb_margin")		438.8M
+	getData("gainMarginFreq" ?result "stb_margin")		3.25G
+	getData("gainMargin" ?result "stb_margin")		20.17
+	dB20(value(getData("/VDD" ?result "xf") 10000000))		-30.48
+	VDC("/VOUT")		998.9m
+Design parameters: 
+	project_working/LDO_1_ideal/schematic/M0  l		65n
+	project_working/LDO_1_ideal/schematic/M0  wf		130u
+	project_working/LDO_1_ideal/schematic/M1  l		130n
+	project_working/LDO_1_ideal/schematic/M1  wf		20u
+	project_working/LDO_1_ideal/schematic/M2  l		130n
+	project_working/LDO_1_ideal/schematic/M2  wf		20u
+	project_working/LDO_1_ideal/schematic/M3  l		130n
+	project_working/LDO_1_ideal/schematic/M3  wf		20u
+	project_working/LDO_1_ideal/schematic/M4  l		130n
+	project_working/LDO_1_ideal/schematic/M4  wf		20u
+	project_working/LDO_1_ideal/schematic/M5  l		130n
+	project_working/LDO_1_ideal/schematic/M5  wf		20u
+	project_working/LDO_1_ideal/schematic/M6  l		130n
+	project_working/LDO_1_ideal/schematic/M6  wf		20u
+	project_working/LDO_1_ideal/schematic/M7  l		130n
+	project_working/LDO_1_ideal/schematic/M7  wf		20u
+	project_working/LDO_1_ideal/schematic/M8  l		130n
+	project_working/LDO_1_ideal/schematic/M8  wf		20u
+
+ExplorerRun.0
+Number of points completed: 1
+Number of simulation errors: 0
+ExplorerRun.0 completed. 
+Current time: Mon Aug 31 23:40:11 2026 

@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      work
+HostName                       cent6
+ProcessIdentifier              75457
+ProcessCreationTime_UTC        1788214604
+ProcessCreationTime_Readable   Tue Sep  1 00:16:44 2026 CEST
+AppIdentifier                  /opt/cadence/IC617/tools/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       
+FilePathUsedToEditLock         /home/work/AIC_25/pm210343/LDO_210343d/Testbench_PEX/constraint/prop.cfg
+TimeEditLocked                 Tue Sep  1 00:17:10 2026 CEST

@@ -1,0 +1,1671 @@
+<?xml version="1.0"?>
+<setupdb version="5">maestro
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+			<corner enabled="1">C0
+				<vars>
+					<var>temperature
+						<value>-40, 27, 75</value>
+					</var>
+					<var>VDD
+						<value>1.1, 1.2, 1.3</value>
+					</var>
+				</vars>
+			</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test enabled="1">dc
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>Testbench</value>
+					</option>
+					<option>lib
+						<value>project_working</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR</value>
+					</option>
+					<option>state
+						<value>active</value>
+					</option>
+				</tooloptions>
+				<vars>
+					<var>IREF
+						<value>28.08u</value>
+					</var>
+					<var>CK
+						<value>1p</value>
+					</var>
+					<var>CL
+						<value>0.5p</value>
+					</var>
+					<var>IOUT
+						<value>5m</value>
+					</var>
+					<var>R12
+						<value>500</value>
+					</var>
+					<var>Rab
+						<value>40k</value>
+					</var>
+					<var>Rk
+						<value>500</value>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+					</var>
+				</vars>
+				<origoptions>
+					<option>cell
+						<value>LDO_1_ideal</value>
+					</option>
+					<option>lib
+						<value>project_working</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+				<outputs>
+					<output>VDC("/VOUT")
+						<evalType>point</evalType>
+					</output>
+					<output>v /Iout; dc (V)
+						<evalType>point</evalType>
+					</output>
+					<output>OP("/M6" "vth")
+						<evalType>point</evalType>
+					</output>
+					<output>OP("/M9" "ids")
+						<evalType>point</evalType>
+					</output>
+					<output>OP("/M10" "ids")
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+			</test>
+			<test enabled="1">stb
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>Testbench</value>
+					</option>
+					<option>lib
+						<value>project_working</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR</value>
+					</option>
+					<option>state
+						<value>active</value>
+					</option>
+				</tooloptions>
+				<vars>
+					<var>CK
+						<value>0.95p</value>
+					</var>
+					<var>CL
+						<value>0.5p</value>
+					</var>
+					<var>IOUT
+						<value>5m</value>
+					</var>
+					<var>R12
+						<value>500</value>
+					</var>
+					<var>Rab
+						<value>40k</value>
+					</var>
+					<var>Rk
+						<value>500</value>
+					</var>
+					<var>VDD
+						<value>1.1</value>
+					</var>
+				</vars>
+				<origoptions>
+					<option>cell
+						<value>LDO_1_ideal</value>
+					</option>
+					<option>lib
+						<value>project_working</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+				<outputs>
+					<output>PM
+						<evalType>point</evalType>
+					</output>
+					<output>GM
+						<evalType>point</evalType>
+					</output>
+					<output>GM Freq
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+			</test>
+			<test enabled="1">noise
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>Testbench</value>
+					</option>
+					<option>lib
+						<value>project_working</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR</value>
+					</option>
+					<option>state
+						<value>active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>LDO_1_ideal</value>
+					</option>
+					<option>lib
+						<value>project_working</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+				<vars>
+					<var>IREF
+						<value>27u</value>
+					</var>
+					<var>CK
+						<value>1p</value>
+					</var>
+					<var>CL
+						<value>0.5p</value>
+					</var>
+					<var>IOUT
+						<value>5m</value>
+					</var>
+					<var>R12
+						<value>500</value>
+					</var>
+					<var>Rab
+						<value>40k</value>
+					</var>
+					<var>Rk
+						<value>500</value>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+					</var>
+				</vars>
+			</test>
+			<test enabled="1">PSRR
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>Testbench</value>
+					</option>
+					<option>lib
+						<value>project_working</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR</value>
+					</option>
+					<option>state
+						<value>active</value>
+					</option>
+				</tooloptions>
+				<vars>
+					<var>CK
+						<value>1p</value>
+					</var>
+					<var>CL
+						<value>0.5p</value>
+					</var>
+					<var>IOUT
+						<value>5m</value>
+					</var>
+					<var>R12
+						<value>500</value>
+					</var>
+					<var>Rab
+						<value>40k</value>
+					</var>
+					<var>Rk
+						<value>500</value>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+					</var>
+				</vars>
+				<origoptions>
+					<option>cell
+						<value>LDO_1_ideal</value>
+					</option>
+					<option>lib
+						<value>project_working</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+			<test enabled="1">important
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>Testbench_ideal</value>
+					</option>
+					<option>lib
+						<value>LDO_210343d</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR</value>
+					</option>
+					<option>state
+						<value>active</value>
+					</option>
+				</tooloptions>
+				<vars>
+					<var>IREF
+						<value>28u</value>
+					</var>
+					<var>CK
+						<value>700f</value>
+					</var>
+					<var>CL
+						<value>0.5p</value>
+					</var>
+					<var>IOUT
+						<value>5m</value>
+					</var>
+					<var>R12
+						<value>500</value>
+					</var>
+					<var>Rab
+						<value>40k</value>
+					</var>
+					<var>Rk
+						<value>500</value>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+					</var>
+				</vars>
+				<origoptions>
+					<option>cell
+						<value>LDO_1_ideal</value>
+					</option>
+					<option>lib
+						<value>project_working</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+				<outputs>
+					<output>getData("gainMargin" ?result "stb_margin")
+						<evalType>point</evalType>
+					</output>
+					<output>value(phaseDegUnwrapped(getData("/VDD" ?result "xf")) 1000000)
+						<evalType>point</evalType>
+					</output>
+					<output>V/V /VDD; xf deg(V/V)
+						<evalType>point</evalType>
+					</output>
+					<output>dB20(value(getData("/VDD" ?result "xf") 10000000))
+						<evalType>point</evalType>
+					</output>
+					<output>nil
+						<evalType>point</evalType>
+					</output>
+					<output>value(getData("out" ?result "noise") 1000000)
+						<evalType>point</evalType>
+					</output>
+					<output>OP("/I29/M9" "ids")
+						<evalType>point</evalType>
+					</output>
+					<output>OP("/I29/M6" "ids")
+						<evalType>point</evalType>
+					</output>
+					<output>OP("/I29/M1" "ids")
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+			</test>
+		</tests>
+		<checksasserts netlist="0">
+			<test netlist="0" netlistscope="all">project_old:LDO_1:1</test>
+			<test netlist="0" netlistscope="all">dc</test>
+			<test netlist="0" netlistscope="all">noise</test>
+			<test netlist="0" netlistscope="all">project_working:LDO_1:1</test>
+			<test netlist="0" netlistscope="all">important</test>
+		</checksasserts>
+		<plottingoptions>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+			<plottingoption>autoplotmode
+				<value>Replace</value>
+			</plottingoption>
+		</plottingoptions>
+		<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
+		<parameters>
+			<location>project_working/LDO_1_ideal/schematic/M17</location>
+			<location>project_working/LDO_1_ideal/schematic/M0</location>
+			<location>project_working/LDO_1_ideal/schematic/M1</location>
+			<location>project_working/LDO_1_ideal/schematic/M2</location>
+			<location>project_working/LDO_1_ideal/schematic/M3</location>
+			<location>project_working/LDO_1_ideal/schematic/M4</location>
+			<location>project_working/LDO_1_ideal/schematic/M5</location>
+			<location>project_working/LDO_1_ideal/schematic/M6</location>
+			<location>project_working/LDO_1_ideal/schematic/M7</location>
+			<location>project_working/LDO_1_ideal/schematic/M8</location>
+			<location>project_working/LDO_1_ideal/schematic/C1</location>
+			<location>project_working/LDO_1_not_ideal/schematic/M9
+				<parameter enabled="1">l
+					<value>200n</value>
+				</parameter>
+				<parameter enabled="1">wf
+					<value>50u</value>
+				</parameter>
+			</location>
+			<location>project_working/LDO_1_not_ideal/schematic/M10
+				<parameter enabled="1">l
+					<value>200n</value>
+				</parameter>
+				<parameter enabled="1">wf
+					<value>10u</value>
+				</parameter>
+			</location>
+			<location>project_working/LDO_1_not_ideal/schematic/M0
+				<parameter enabled="1">l
+					<value>65.0n</value>
+				</parameter>
+				<parameter enabled="1">wf
+					<value>130.055u</value>
+				</parameter>
+			</location>
+			<location>project_working/LDO_1_not_ideal/schematic/M1
+				<parameter enabled="1">l
+					<value>130.0n</value>
+				</parameter>
+				<parameter enabled="1">wf
+					<value>20u</value>
+				</parameter>
+			</location>
+			<location>project_working/LDO_1_not_ideal/schematic/M2
+				<parameter enabled="1">l
+					<value>M1/l@project_working/LDO_1_not_ideal/schematic</value>
+				</parameter>
+				<parameter enabled="1">wf
+					<value>M1/wf@project_working/LDO_1_not_ideal/schematic</value>
+				</parameter>
+			</location>
+			<location>project_working/LDO_1_not_ideal/schematic/M3
+				<parameter enabled="1">l
+					<value>M1/l@project_working/LDO_1_not_ideal/schematic</value>
+				</parameter>
+				<parameter enabled="1">wf
+					<value>M1/wf@project_working/LDO_1_not_ideal/schematic</value>
+				</parameter>
+			</location>
+			<location>project_working/LDO_1_not_ideal/schematic/M4
+				<parameter enabled="1">l
+					<value>M1/l@project_working/LDO_1_not_ideal/schematic</value>
+				</parameter>
+				<parameter enabled="1">wf
+					<value>M1/wf@project_working/LDO_1_not_ideal/schematic</value>
+				</parameter>
+			</location>
+			<location>project_working/LDO_1_not_ideal/schematic/M5
+				<parameter enabled="1">l
+					<value>M1/l@project_working/LDO_1_not_ideal/schematic</value>
+				</parameter>
+				<parameter enabled="1">wf
+					<value>M1/wf@project_working/LDO_1_not_ideal/schematic</value>
+				</parameter>
+			</location>
+			<location>project_working/LDO_1_not_ideal/schematic/M6
+				<parameter enabled="1">l
+					<value>M1/l@project_working/LDO_1_not_ideal/schematic</value>
+				</parameter>
+				<parameter enabled="1">wf
+					<value>M1/wf@project_working/LDO_1_not_ideal/schematic</value>
+				</parameter>
+			</location>
+			<location>project_working/LDO_1_not_ideal/schematic/M7
+				<parameter enabled="1">l
+					<value>M1/l@project_working/LDO_1_not_ideal/schematic</value>
+				</parameter>
+				<parameter enabled="1">wf
+					<value>M1/wf@project_working/LDO_1_not_ideal/schematic</value>
+				</parameter>
+			</location>
+			<location>project_working/LDO_1_not_ideal/schematic/M8
+				<parameter enabled="1">l
+					<value>M1/l@project_working/LDO_1_not_ideal/schematic</value>
+				</parameter>
+				<parameter enabled="1">wf
+					<value>M1/wf@project_working/LDO_1_not_ideal/schematic</value>
+				</parameter>
+			</location>
+		</parameters>
+		<vars></vars>
+		<exploreroptions>
+			<exploreroption>autoplotmode
+				<value>Replace</value>
+			</exploreroption>
+			<exploreroption>histogramtype
+				<value>pass/fail</value>
+			</exploreroption>
+			<exploreroption>histogrambins
+				<value>10</value>
+			</exploreroption>
+			<exploreroption>showhistogramdensity
+				<value>yes</value>
+			</exploreroption>
+			<exploreroption>showhistogramdeviation
+				<value>yes</value>
+			</exploreroption>
+			<exploreroption>showhistogrampercentmarkers
+				<value>no</value>
+			</exploreroption>
+			<exploreroption>showhistogrampoints
+				<value>yes</value>
+			</exploreroption>
+			<exploreroption>histogramqqplot
+				<value>no</value>
+			</exploreroption>
+		</exploreroptions>
+		<specs>
+			<spec>dc.v /Iout; dc (V)
+				<testname>dc</testname>
+				<resname>v /Iout; dc (V)</resname>
+				<specType>range</specType>
+				<min>0.998</min>
+				<max>1.002</max>
+				<target></target>
+				<tol></tol>
+			</spec>
+			<spec>stb.PM
+				<testname>stb</testname>
+				<resname>PM</resname>
+				<specType>lt</specType>
+				<min></min>
+				<max>75</max>
+				<target></target>
+				<tol></tol>
+			</spec>
+			<spec>important.getData("phaseMargin" ?result "stb_margin")
+				<testname>important</testname>
+				<resname>getData("phaseMargin" ?result "stb_margin")</resname>
+				<specType>lt</specType>
+				<min></min>
+				<max>75</max>
+				<target></target>
+				<tol></tol>
+			</spec>
+			<spec>important.getData("gainMarginFreq" ?result "stb_margin")
+				<testname>important</testname>
+				<resname>getData("gainMarginFreq" ?result "stb_margin")</resname>
+				<specType>gt</specType>
+				<min>3G</min>
+				<max></max>
+				<target></target>
+				<tol></tol>
+			</spec>
+			<spec>important.getData("gainMargin" ?result "stb_margin")
+				<testname>important</testname>
+				<resname>getData("gainMargin" ?result "stb_margin")</resname>
+				<specType>gt</specType>
+				<min>20</min>
+				<max></max>
+				<target></target>
+				<tol></tol>
+			</spec>
+			<spec>important.VDC("/VOUT")
+				<testname>important</testname>
+				<resname>VDC("/VOUT")</resname>
+				<specType>range</specType>
+				<min>0.990</min>
+				<max>1.010</max>
+				<target></target>
+				<tol></tol>
+			</spec>
+			<spec>important.value(getData("out" ?result "noise") 1000000)
+				<testname>important</testname>
+				<resname>value(getData("out" ?result "noise") 1000000)</resname>
+				<specType>lt</specType>
+				<min></min>
+				<max>50n</max>
+				<target></target>
+				<tol></tol>
+			</spec>
+			<spec>important.dB20(value(getData("/VDD" ?result "xf") 10000000))
+				<testname>important</testname>
+				<resname>dB20(value(getData("/VDD" ?result "xf") 10000000))</resname>
+				<specType>lt</specType>
+				<min></min>
+				<max>-30</max>
+				<target></target>
+				<tol></tol>
+			</spec>
+		</specs>
+		<allcornersenabled>0</allcornersenabled>
+		<runoptions>
+			<mode>Monte Carlo Sampling
+				<runoption>mcmethod
+					<value>all</value>
+				</runoption>
+				<runoption>mcnumpoints
+					<value>200</value>
+				</runoption>
+				<runoption>mcnumbins
+					<value></value>
+				</runoption>
+				<runoption>mcStopEarly
+					<value>0</value>
+				</runoption>
+				<runoption>mcStopMethod
+					<value>Significance Test</value>
+				</runoption>
+				<runoption>samplingmode
+					<value>random</value>
+				</runoption>
+				<runoption>saveprocess
+					<value>1</value>
+				</runoption>
+				<runoption>savemismatch
+					<value>0</value>
+				</runoption>
+				<runoption>mcreferencepoint
+					<value>0</value>
+				</runoption>
+				<runoption>donominal
+					<value>1</value>
+				</runoption>
+				<runoption>saveallplots
+					<value>0</value>
+				</runoption>
+				<runoption>montecarloseed
+					<value>12345</value>
+				</runoption>
+				<runoption>mcstartingrunnumber
+					<value></value>
+				</runoption>
+				<runoption>dumpParamMode
+					<value>yes</value>
+				</runoption>
+			</mode>
+		</runoptions>
+	</active>
+	<history>History
+		<historyentry assemblerOrExplorer="assembler" roOrView="view">Interactive.0
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<vars>
+							<var>temperature
+								<value>-40, 27, 75</value>
+							</var>
+							<var>VDD
+								<value>1.1, 1.2, 1.3</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">dc
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>LDO_1_ideal</value>
+							</option>
+							<option>lib
+								<value>project_working</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Interactive.0</value>
+							</option>
+						</tooloptions>
+						<vars>
+							<var>CL
+								<value>0.5p</value>
+							</var>
+							<var>IOUT
+								<value>5m</value>
+							</var>
+							<var>R12
+								<value>500</value>
+							</var>
+							<var>Rab
+								<value>40k</value>
+							</var>
+							<var>Rk
+								<value>500</value>
+							</var>
+							<var>VDD
+								<value>1.2</value>
+							</var>
+							<var>CK
+								<value>1p</value>
+							</var>
+						</vars>
+						<origoptions>
+							<option>cell
+								<value>LDO_1_ideal</value>
+							</option>
+							<option>lib
+								<value>project_working</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VDC("/VOUT")
+								<evalType>point</evalType>
+							</output>
+							<output>v /Iout; dc (V)
+								<evalType>point</evalType>
+							</output>
+							<output>OP("/M6" "vth")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">stb
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>LDO_1_ideal</value>
+							</option>
+							<option>lib
+								<value>project_working</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Interactive.0</value>
+							</option>
+						</tooloptions>
+						<vars>
+							<var>CK
+								<value>0.95p</value>
+							</var>
+							<var>CL
+								<value>0.5p</value>
+							</var>
+							<var>IOUT
+								<value>5m</value>
+							</var>
+							<var>R12
+								<value>500</value>
+							</var>
+							<var>Rab
+								<value>40k</value>
+							</var>
+							<var>Rk
+								<value>500</value>
+							</var>
+							<var>VDD
+								<value>1.2</value>
+							</var>
+						</vars>
+						<origoptions>
+							<option>cell
+								<value>LDO_1_ideal</value>
+							</option>
+							<option>lib
+								<value>project_working</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>PM
+								<evalType>point</evalType>
+							</output>
+							<output>GM
+								<evalType>point</evalType>
+							</output>
+							<output>GM Freq
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">noise
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>LDO_1_ideal</value>
+							</option>
+							<option>lib
+								<value>project_working</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Interactive.0</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>LDO_1_ideal</value>
+							</option>
+							<option>lib
+								<value>project_working</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<vars>
+							<var>CK
+								<value>1p</value>
+							</var>
+							<var>CL
+								<value>0.5p</value>
+							</var>
+							<var>IOUT
+								<value>5m</value>
+							</var>
+							<var>R12
+								<value>500</value>
+							</var>
+							<var>Rab
+								<value>40k</value>
+							</var>
+							<var>Rk
+								<value>500</value>
+							</var>
+							<var>VDD
+								<value>1.2</value>
+							</var>
+						</vars>
+					</test>
+					<test enabled="1">PSRR
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>LDO_1_ideal</value>
+							</option>
+							<option>lib
+								<value>project_working</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Interactive.0</value>
+							</option>
+						</tooloptions>
+						<vars>
+							<var>CK
+								<value>1p</value>
+							</var>
+							<var>CL
+								<value>0.5p</value>
+							</var>
+							<var>IOUT
+								<value>5m</value>
+							</var>
+							<var>R12
+								<value>500</value>
+							</var>
+							<var>Rab
+								<value>40k</value>
+							</var>
+							<var>Rk
+								<value>500</value>
+							</var>
+							<var>VDD
+								<value>1.2</value>
+							</var>
+						</vars>
+						<origoptions>
+							<option>cell
+								<value>LDO_1_ideal</value>
+							</option>
+							<option>lib
+								<value>project_working</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">dc_points
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>LDO_1_ideal</value>
+							</option>
+							<option>lib
+								<value>project_working</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Interactive.0</value>
+							</option>
+						</tooloptions>
+						<vars>
+							<var>CK
+								<value>1p</value>
+							</var>
+							<var>CL
+								<value>0.5p</value>
+							</var>
+							<var>IOUT
+								<value>0 1m 2m 3m 4m 5m</value>
+							</var>
+							<var>R12
+								<value>500</value>
+							</var>
+							<var>Rab
+								<value>40k</value>
+							</var>
+							<var>Rk
+								<value>500</value>
+							</var>
+							<var>VDD
+								<value>1.2</value>
+							</var>
+						</vars>
+						<origoptions>
+							<option>cell
+								<value>LDO_1_ideal</value>
+							</option>
+							<option>lib
+								<value>project_working</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">pz
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>LDO_1_ideal</value>
+							</option>
+							<option>lib
+								<value>project_working</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Interactive.0</value>
+							</option>
+						</tooloptions>
+						<vars>
+							<var>CK
+								<value>1p</value>
+							</var>
+							<var>CL
+								<value>0.5p</value>
+							</var>
+							<var>IOUT
+								<value>5m</value>
+							</var>
+							<var>R12
+								<value>500</value>
+							</var>
+							<var>Rab
+								<value>40k</value>
+							</var>
+							<var>Rk
+								<value>500</value>
+							</var>
+							<var>VDD
+								<value>1.2</value>
+							</var>
+						</vars>
+						<origoptions>
+							<option>cell
+								<value>LDO_1_ideal</value>
+							</option>
+							<option>lib
+								<value>project_working</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<checksasserts netlist="0">
+					<test netlist="0" netlistscope="all">project_old:LDO_1:1</test>
+					<test netlist="0" netlistscope="all">dc</test>
+					<test netlist="0" netlistscope="all">noise</test>
+					<test netlist="0" netlistscope="all">project_working:LDO_1:1</test>
+				</checksasserts>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>autoplotmode
+						<value>Replace</value>
+					</plottingoption>
+				</plottingoptions>
+				<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
+				<parameters>
+					<location>project_working/LDO_1_ideal/schematic/M17</location>
+					<location>project_working/LDO_1_ideal/schematic/M0
+						<parameter enabled="1">l
+							<value>65.0n</value>
+						</parameter>
+						<parameter enabled="1">wf
+							<value>130u</value>
+						</parameter>
+					</location>
+					<location>project_working/LDO_1_ideal/schematic/M1
+						<parameter enabled="1">l
+							<value>130n</value>
+						</parameter>
+						<parameter enabled="1">wf
+							<value>20u</value>
+						</parameter>
+					</location>
+					<location>project_working/LDO_1_ideal/schematic/M2
+						<parameter enabled="1">l
+							<value>M1/l@project_working/LDO_1_ideal/schematic</value>
+						</parameter>
+						<parameter enabled="1">wf
+							<value>M1/wf@project_working/LDO_1_ideal/schematic</value>
+						</parameter>
+					</location>
+					<location>project_working/LDO_1_ideal/schematic/M3
+						<parameter enabled="1">l
+							<value>M1/l@project_working/LDO_1_ideal/schematic</value>
+						</parameter>
+						<parameter enabled="1">wf
+							<value>M1/wf@project_working/LDO_1_ideal/schematic</value>
+						</parameter>
+					</location>
+					<location>project_working/LDO_1_ideal/schematic/M4
+						<parameter enabled="1">l
+							<value>M1/l@project_working/LDO_1_ideal/schematic</value>
+						</parameter>
+						<parameter enabled="1">wf
+							<value>M1/wf@project_working/LDO_1_ideal/schematic</value>
+						</parameter>
+					</location>
+					<location>project_working/LDO_1_ideal/schematic/M5
+						<parameter enabled="1">l
+							<value>M1/l@project_working/LDO_1_ideal/schematic</value>
+						</parameter>
+						<parameter enabled="1">wf
+							<value>M1/wf@project_working/LDO_1_ideal/schematic</value>
+						</parameter>
+					</location>
+					<location>project_working/LDO_1_ideal/schematic/M6
+						<parameter enabled="1">l
+							<value>M1/l@project_working/LDO_1_ideal/schematic</value>
+						</parameter>
+						<parameter enabled="1">wf
+							<value>M1/wf@project_working/LDO_1_ideal/schematic</value>
+						</parameter>
+					</location>
+					<location>project_working/LDO_1_ideal/schematic/M7
+						<parameter enabled="1">l
+							<value>M1/l@project_working/LDO_1_ideal/schematic</value>
+						</parameter>
+						<parameter enabled="1">wf
+							<value>M1/wf@project_working/LDO_1_ideal/schematic</value>
+						</parameter>
+					</location>
+					<location>project_working/LDO_1_ideal/schematic/M8
+						<parameter enabled="1">l
+							<value>M1/l@project_working/LDO_1_ideal/schematic</value>
+						</parameter>
+						<parameter enabled="1">wf
+							<value>M1/wf@project_working/LDO_1_ideal/schematic</value>
+						</parameter>
+					</location>
+					<location>project_working/LDO_1_ideal/schematic/C1</location>
+				</parameters>
+				<vars></vars>
+				<exploreroptions>
+					<exploreroption>autoplotmode
+						<value>Replace</value>
+					</exploreroption>
+				</exploreroptions>
+				<specs>
+					<spec>dc.v /Iout; dc (V)
+						<testname>dc</testname>
+						<resname>v /Iout; dc (V)</resname>
+						<specType>range</specType>
+						<min>0.998</min>
+						<max>1.002</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Aug 24 19:47:37 2026</timestamp>
+			<resultsname></resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/Interactive.0.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/cent6_work_194738350</localpsfdir>
+			<psfdir></psfdir>
+			<simdir></simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog></runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/Interactive.0.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="explorer" roOrView="view">ExplorerRun.0
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<vars>
+							<var>temperature
+								<value>-40, 27, 75</value>
+							</var>
+							<var>VDD
+								<value>1.1, 1.2, 1.3</value>
+							</var>
+						</vars>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">important
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Testbench_ideal</value>
+							</option>
+							<option>lib
+								<value>LDO_210343d</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ExplorerRun.0</value>
+							</option>
+						</tooloptions>
+						<vars>
+							<var>IREF
+								<value>28u</value>
+							</var>
+							<var>CK
+								<value>700f</value>
+							</var>
+							<var>CL
+								<value>0.5p</value>
+							</var>
+							<var>IOUT
+								<value>5m</value>
+							</var>
+							<var>R12
+								<value>500</value>
+							</var>
+							<var>Rab
+								<value>40k</value>
+							</var>
+							<var>Rk
+								<value>500</value>
+							</var>
+							<var>VDD
+								<value>1.2</value>
+							</var>
+						</vars>
+						<origoptions>
+							<option>cell
+								<value>LDO_1_ideal</value>
+							</option>
+							<option>lib
+								<value>project_working</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>getData("gainMargin" ?result "stb_margin")
+								<evalType>point</evalType>
+							</output>
+							<output>value(phaseDegUnwrapped(getData("/VDD" ?result "xf")) 1000000)
+								<evalType>point</evalType>
+							</output>
+							<output>V/V /VDD; xf deg(V/V)
+								<evalType>point</evalType>
+							</output>
+							<output>dB20(value(getData("/VDD" ?result "xf") 10000000))
+								<evalType>point</evalType>
+							</output>
+							<output>nil
+								<evalType>point</evalType>
+							</output>
+							<output>value(getData("out" ?result "noise") 1000000)
+								<evalType>point</evalType>
+							</output>
+							<output>OP("/I29/M9" "ids")
+								<evalType>point</evalType>
+							</output>
+							<output>OP("/I29/M6" "ids")
+								<evalType>point</evalType>
+							</output>
+							<output>OP("/I29/M1" "ids")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<checksasserts netlist="0">
+					<test netlist="0" netlistscope="all">project_old:LDO_1:1</test>
+					<test netlist="0" netlistscope="all">dc</test>
+					<test netlist="0" netlistscope="all">noise</test>
+					<test netlist="0" netlistscope="all">project_working:LDO_1:1</test>
+					<test netlist="0" netlistscope="all">important</test>
+				</checksasserts>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>Auto</value>
+					</plottingoption>
+					<plottingoption>autoplotmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+					<plottingoption>autoplotsignals
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>autoplotwaveexpr
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>autoplotscalarexpr
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>annotatedesignname
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>annotatesimdate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>annotatedesignvars
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>annotatetemperature
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>annotatescalaroutputs
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>annotatespecmarkers
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>directplotmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>directplotafter
+						<value>All Selections Are Made</value>
+					</plottingoption>
+					<plottingoption>histogramtype
+						<value>pass/fail</value>
+					</plottingoption>
+					<plottingoption>histogrambins
+						<value>10</value>
+					</plottingoption>
+					<plottingoption>showhistogramdensity
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>showhistogramdeviation
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>showhistogrampercentmarkers
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>histogramqqplot
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>showhistogrampoints
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>printafter
+						<value>Each Selection</value>
+					</plottingoption>
+				</plottingoptions>
+				<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
+				<parameters>
+					<location>project_working/LDO_1_ideal/schematic/M17</location>
+					<location>project_working/LDO_1_ideal/schematic/M0</location>
+					<location>project_working/LDO_1_ideal/schematic/M1</location>
+					<location>project_working/LDO_1_ideal/schematic/M2</location>
+					<location>project_working/LDO_1_ideal/schematic/M3</location>
+					<location>project_working/LDO_1_ideal/schematic/M4</location>
+					<location>project_working/LDO_1_ideal/schematic/M5</location>
+					<location>project_working/LDO_1_ideal/schematic/M6</location>
+					<location>project_working/LDO_1_ideal/schematic/M7</location>
+					<location>project_working/LDO_1_ideal/schematic/M8</location>
+					<location>project_working/LDO_1_ideal/schematic/C1</location>
+					<location>project_working/LDO_1_not_ideal/schematic/M9
+						<parameter enabled="1">l
+							<value>200n</value>
+						</parameter>
+						<parameter enabled="1">wf
+							<value>50u</value>
+						</parameter>
+					</location>
+					<location>project_working/LDO_1_not_ideal/schematic/M10
+						<parameter enabled="1">l
+							<value>200n</value>
+						</parameter>
+						<parameter enabled="1">wf
+							<value>10u</value>
+						</parameter>
+					</location>
+					<location>project_working/LDO_1_not_ideal/schematic/M0
+						<parameter enabled="1">l
+							<value>65.0n</value>
+						</parameter>
+						<parameter enabled="1">wf
+							<value>130.055u</value>
+						</parameter>
+					</location>
+					<location>project_working/LDO_1_not_ideal/schematic/M1
+						<parameter enabled="1">l
+							<value>130.0n</value>
+						</parameter>
+						<parameter enabled="1">wf
+							<value>20u</value>
+						</parameter>
+					</location>
+					<location>project_working/LDO_1_not_ideal/schematic/M2
+						<parameter enabled="1">l
+							<value>M1/l@project_working/LDO_1_not_ideal/schematic</value>
+						</parameter>
+						<parameter enabled="1">wf
+							<value>M1/wf@project_working/LDO_1_not_ideal/schematic</value>
+						</parameter>
+					</location>
+					<location>project_working/LDO_1_not_ideal/schematic/M3
+						<parameter enabled="1">l
+							<value>M1/l@project_working/LDO_1_not_ideal/schematic</value>
+						</parameter>
+						<parameter enabled="1">wf
+							<value>M1/wf@project_working/LDO_1_not_ideal/schematic</value>
+						</parameter>
+					</location>
+					<location>project_working/LDO_1_not_ideal/schematic/M4
+						<parameter enabled="1">l
+							<value>M1/l@project_working/LDO_1_not_ideal/schematic</value>
+						</parameter>
+						<parameter enabled="1">wf
+							<value>M1/wf@project_working/LDO_1_not_ideal/schematic</value>
+						</parameter>
+					</location>
+					<location>project_working/LDO_1_not_ideal/schematic/M5
+						<parameter enabled="1">l
+							<value>M1/l@project_working/LDO_1_not_ideal/schematic</value>
+						</parameter>
+						<parameter enabled="1">wf
+							<value>M1/wf@project_working/LDO_1_not_ideal/schematic</value>
+						</parameter>
+					</location>
+					<location>project_working/LDO_1_not_ideal/schematic/M6
+						<parameter enabled="1">l
+							<value>M1/l@project_working/LDO_1_not_ideal/schematic</value>
+						</parameter>
+						<parameter enabled="1">wf
+							<value>M1/wf@project_working/LDO_1_not_ideal/schematic</value>
+						</parameter>
+					</location>
+					<location>project_working/LDO_1_not_ideal/schematic/M7
+						<parameter enabled="1">l
+							<value>M1/l@project_working/LDO_1_not_ideal/schematic</value>
+						</parameter>
+						<parameter enabled="1">wf
+							<value>M1/wf@project_working/LDO_1_not_ideal/schematic</value>
+						</parameter>
+					</location>
+					<location>project_working/LDO_1_not_ideal/schematic/M8
+						<parameter enabled="1">l
+							<value>M1/l@project_working/LDO_1_not_ideal/schematic</value>
+						</parameter>
+						<parameter enabled="1">wf
+							<value>M1/wf@project_working/LDO_1_not_ideal/schematic</value>
+						</parameter>
+					</location>
+				</parameters>
+				<vars></vars>
+				<exploreroptions>
+					<exploreroption>autoplotmode
+						<value>Replace</value>
+					</exploreroption>
+					<exploreroption>histogramtype
+						<value>pass/fail</value>
+					</exploreroption>
+					<exploreroption>histogrambins
+						<value>10</value>
+					</exploreroption>
+					<exploreroption>showhistogramdensity
+						<value>yes</value>
+					</exploreroption>
+					<exploreroption>showhistogramdeviation
+						<value>yes</value>
+					</exploreroption>
+					<exploreroption>showhistogrampercentmarkers
+						<value>no</value>
+					</exploreroption>
+					<exploreroption>showhistogrampoints
+						<value>yes</value>
+					</exploreroption>
+					<exploreroption>histogramqqplot
+						<value>no</value>
+					</exploreroption>
+				</exploreroptions>
+				<specs>
+					<spec>dc.v /Iout; dc (V)
+						<testname>dc</testname>
+						<resname>v /Iout; dc (V)</resname>
+						<specType>range</specType>
+						<min>0.998</min>
+						<max>1.002</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>stb.PM
+						<testname>stb</testname>
+						<resname>PM</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>75</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>important.getData("phaseMargin" ?result "stb_margin")
+						<testname>important</testname>
+						<resname>getData("phaseMargin" ?result "stb_margin")</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>75</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>important.getData("gainMarginFreq" ?result "stb_margin")
+						<testname>important</testname>
+						<resname>getData("gainMarginFreq" ?result "stb_margin")</resname>
+						<specType>gt</specType>
+						<min>3G</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>important.getData("gainMargin" ?result "stb_margin")
+						<testname>important</testname>
+						<resname>getData("gainMargin" ?result "stb_margin")</resname>
+						<specType>gt</specType>
+						<min>20</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>important.VDC("/VOUT")
+						<testname>important</testname>
+						<resname>VDC("/VOUT")</resname>
+						<specType>range</specType>
+						<min>0.990</min>
+						<max>1.010</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>important.value(getData("out" ?result "noise") 1000000)
+						<testname>important</testname>
+						<resname>value(getData("out" ?result "noise") 1000000)</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>50n</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>important.dB20(value(getData("/VDD" ?result "xf") 10000000))
+						<testname>important</testname>
+						<resname>dB20(value(getData("/VDD" ?result "xf") 10000000))</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>-30</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<allcornersenabled>0</allcornersenabled>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcStopMethod
+							<value>Significance Test</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>0</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>0</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value>12345</value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dumpParamMode
+							<value>yes</value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Aug 31 23:38:08 2026
+</timestamp>
+			<resultsname>/home/work/AIC_25/pm210343/LDO_210343d/Testbench_ideal/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/cent6_work_233809135</localpsfdir>
+			<psfdir>/home/work/simulation/LDO_210343d/Testbench_ideal/maestro/results/maestro/ExplorerRun.0</psfdir>
+			<simdir>$AXL_PROJECT_DIR/LDO_210343d/Testbench_ideal/maestro/results/maestro/ExplorerRun.0</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/work/AIC_25/pm210343/LDO_210343d/Testbench_ideal/maestro/results/maestro/ExplorerRun.0.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

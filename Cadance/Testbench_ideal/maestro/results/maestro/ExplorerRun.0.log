@@ -1,0 +1,45 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Aug 31 23:38:10 2026 
+Best design point: 1
+Design specs: 
+	important	corner	Nominal - 
+	getData("phaseMargin" ?result "stb_margin")		51.54	Yes
+	getData("phaseMarginFreq" ?result "stb_margin")		440.5M
+	getData("gainMarginFreq" ?result "stb_margin")		4.768G	Yes
+	getData("gainMargin" ?result "stb_margin")		27.61	Yes
+	dB20(value(getData("/VDD" ?result "xf") 10000000))		-31.83	Yes
+	VDC("/VOUT")		998.8m	Yes
+	value(getData("out" ?result "noise") 1000000)		20.49n	Yes
+	OP("/I29/M1" "ids")		Error	No
+	OP("/I29/M9" "ids")		Error	No
+	OP("/I29/M6" "ids")		Error	No
+Design parameters: 
+	project_working/LDO_1_not_ideal/schematic/M9  l		200n
+	project_working/LDO_1_not_ideal/schematic/M9  wf		50u
+	project_working/LDO_1_not_ideal/schematic/M10  l		200n
+	project_working/LDO_1_not_ideal/schematic/M10  wf		10u
+	project_working/LDO_1_not_ideal/schematic/M0  l		65n
+	project_working/LDO_1_not_ideal/schematic/M0  wf		130.1u
+	project_working/LDO_1_not_ideal/schematic/M1  l		130n
+	project_working/LDO_1_not_ideal/schematic/M1  wf		20u
+	project_working/LDO_1_not_ideal/schematic/M2  l		130n
+	project_working/LDO_1_not_ideal/schematic/M2  wf		20u
+	project_working/LDO_1_not_ideal/schematic/M3  l		130n
+	project_working/LDO_1_not_ideal/schematic/M3  wf		20u
+	project_working/LDO_1_not_ideal/schematic/M4  l		130n
+	project_working/LDO_1_not_ideal/schematic/M4  wf		20u
+	project_working/LDO_1_not_ideal/schematic/M5  l		130n
+	project_working/LDO_1_not_ideal/schematic/M5  wf		20u
+	project_working/LDO_1_not_ideal/schematic/M6  l		130n
+	project_working/LDO_1_not_ideal/schematic/M6  wf		20u
+	project_working/LDO_1_not_ideal/schematic/M7  l		130n
+	project_working/LDO_1_not_ideal/schematic/M7  wf		20u
+	project_working/LDO_1_not_ideal/schematic/M8  l		130n
+	project_working/LDO_1_not_ideal/schematic/M8  wf		20u
+
+ExplorerRun.0
+Number of points completed: 1
+Number of simulation errors: 3
+ExplorerRun.0 completed. 
+Current time: Mon Aug 31 23:38:15 2026 
